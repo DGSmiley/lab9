@@ -2,57 +2,46 @@ package lab9;
 import java.lang.Math;
 
 
+
 public class Circle {
-	
-		public double Circle ;
+		public int radius = 0;
 		public double circumference;
 		public double area;
 		public String formattedCircumference;
 		public String formattedArea;
-		private String formatNumber;
+		private double formatNumber;
 		public static int getObjectCount;
-		public static final double PI;
+		
 
-		public  Circle (String fc, String fa, double cir, double a) {
-			formattedCircumference = fc;
-			formattedArea = fa;
-			//formatNumber = fn;
-			circumference = cir;
-			area = a;
-		}
+		public  Circle (int rad) {
+			
+					}
+		
 		public String getFormattedCircumference() {
 			return formattedCircumference;
-		}
-
-		public void setformattedCircumference(String fc) {
-			formattedCircumference = fc;
 		}
 
 		public String getFormattedArea() {
 			return formattedArea;
 		}
-
-		public void setformattedArea(String fa) {
-			formattedArea = fa;
-		}
-
 		public double getCircumference() {
-			PI*(radius*radius);
+			circumference = Math.PI*2*radius;
 			return circumference;
 		}
 
-		public void setcircumference(double cir) {
-			circumference = cir;
-		}
-
 		public double getArea() {
+			area = Math.PI*(radius * radius);
 			return area;
 		}
 
-		public void setArea(double a) {
-			area = a;
+		private double formatNumber(double x){
+			   x = Math.PI;
+			return formatNumber;
+		}
+		
+		
 		}
 
-	}
+	
 
 

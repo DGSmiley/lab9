@@ -8,14 +8,15 @@ public class circleApp {
 	 Scanner input = new Scanner(System.in);
 	 
 	 System.out.println("Welcome to the circle tester! ");
+	 int radius = 0;
+	 Circle c1 = new Circle(radius);
 	 
-	 Circle c1 = new Circle(null, null, 0, 0);
-	 int radius;
 	 System.out.println("Please enter radius: ");
 	 radius = input.nextInt();
 	 
+	 System.out.println(c1.getArea());
 	 System.out.println(c1.getCircumference());
-
+	 
 	}
 
 }
